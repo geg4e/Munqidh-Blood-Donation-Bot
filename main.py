@@ -289,6 +289,8 @@ async def delete_data_confirm(message: types.Message, state: FSMContext):
 
 # --- Main execution ---
 
+import os
+
 if __name__ == '__main__':
     init_db()
     executor.start_polling(dp, skip_updates=True)
